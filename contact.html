@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact – VegasNow Eats</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Vegas<span>Now</span> Eats</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="restaurants.html">Restaurants</a>
+      <a href="guides.html">Guides</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero hero-sm">
+    <div class="hero-media">
+      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=1400&q=80" alt="Coffee and cafe"/>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <p class="hero-eyebrow">📬 Let's Talk Food</p>
+      <h1>Get in<br/><em>Touch</em></h1>
+      <p class="hero-sub">Found a hidden gem? Want to suggest a spot? Or just want to say hey? We're all ears.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SPLIT -->
+  <section class="section section-dark">
+    <div class="container contact-wrap">
+
+      <div class="contact-form-col">
+        <span class="eyebrow">Drop Us a Line</span>
+        <h2>Send a Message</h2>
+        <p style="color:#aaa; margin-bottom:28px;">We reply within 24 hours on weekdays.</p>
+
+        <div class="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Tony Montana"/>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="tony@example.com"/>
+          </div>
+          <div class="form-group">
+            <label for="subject">What's This About?</label>
+            <select id="subject">
+              <option value="">Choose a topic...</option>
+              <option>Restaurant Suggestion</option>
+              <option>Hidden Gem Tip</option>
+              <option>Partnership / Press</option>
+              <option>General Question</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" rows="5" placeholder="Tell us about a great spot you found, or just say hi..."></textarea>
+          </div>
+          <button class="btn btn-neon" id="submitBtn" onclick="handleSubmit()">Send It →</button>
+          <p class="form-success" id="formSuccess">🎉 Got it! We'll be in touch soon.</p>
+        </div>
+      </div>
+
+      <div class="contact-info-col">
+        <span class="eyebrow">Other Ways to Reach Us</span>
+        <h2>Contact Info</h2>
+        <div class="ci-list">
+          <div class="ci-item"><span class="ci-ico">📧</span><div><strong>Email</strong><p>eats@vegasnoweats.com</p></div></div>
+          <div class="ci-item"><span class="ci-ico">📍</span><div><strong>Based In</strong><p>Las Vegas, Nevada, USA</p></div></div>
+          <div class="ci-item"><span class="ci-ico">🕐</span><div><strong>Response Time</strong><p>Within 24hrs on weekdays</p></div></div>
+          <div class="ci-item"><span class="ci-ico">📸</span><div><strong>Instagram</strong><p>@vegasnoweats</p></div></div>
+        </div>
+
+        <div class="info-box">
+          <h4>🍽 Submit a Restaurant</h4>
+          <p>Know a spot that deserves to be on our list? Use the form and select "Restaurant Suggestion" — we check every submission personally.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Quick Answers</span>
+        <h2>Common Questions</h2>
+      </div>
+      <div class="tips-grid">
+        <div class="tip-card"><span class="tip-icon">🆓</span><h4>Is VegasNow Eats free?</h4><p>Always. All guides, reviews, and recommendations are completely free to read.</p></div>
+        <div class="tip-card"><span class="tip-icon">🤝</span><h4>Do you accept sponsorships?</h4><p>No. We don't accept payment to feature restaurants. Every pick is genuinely earned.</p></div>
+        <div class="tip-card"><span class="tip-icon">📍</span><h4>Can I suggest a spot?</h4><p>Please do. Use the contact form above — local tips are our favourite kind of content.</p></div>
+        <div class="tip-card"><span class="tip-icon">📰</span><h4>Press & partnerships?</h4><p>We work with tourism boards and food brands that share our values. Reach out via email.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container cta-inner">
+      <h2>While You're Here —<br/>Find Your Next Meal.</h2>
+      <p>Our restaurant picks are updated every week.</p>
+      <a href="restaurants.html" class="btn btn-neon">Browse Restaurants</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">Vegas<span>Now</span> Eats</a>
+      <p>Where to Eat in Vegas Today</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="restaurants.html">Restaurants</a>
+      <a href="guides.html">Guides</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>© 2026 VegasNow Eats. All rights reserved. Eat well.</p></div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

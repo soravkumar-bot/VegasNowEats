@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog – VegasNow Eats</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Vegas<span>Now</span> Eats</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="restaurants.html">Restaurants</a>
+      <a href="guides.html">Guides</a>
+      <a href="blog.html" class="active">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero hero-sm">
+    <div class="hero-media">
+      <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1400&q=80" alt="Restaurant ambiance"/>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <p class="hero-eyebrow">📝 Real Talk</p>
+      <h1>The Vegas<br/><em>Food Blog</em></h1>
+      <p class="hero-sub">Honest takes, real meals, no filler. Written by people who actually live and eat in Las Vegas.</p>
+      <a href="#posts" class="btn btn-neon">Read Articles</a>
+    </div>
+  </section>
+
+  <!-- BLOG POSTS -->
+  <section class="section section-dark" id="posts">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Latest Articles</span>
+        <h2>Fresh from the Table</h2>
+      </div>
+      <div class="blog-grid">
+
+        <article class="blog-card blog-card-featured">
+          <div class="blog-img">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80" alt="Best places to eat Vegas"/>
+            <span class="blog-tag">Must Read</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">May 20, 2026 · 8 min read</div>
+            <h3>Best Places to Eat in Vegas Right Now</h3>
+            <p>We spent 30 days eating through Las Vegas — from a $2.99 shrimp cocktail at the Golden Gate to a $400 tasting menu at é by José Andrés. Here's what's actually worth your money and stomach space in 2026.</p>
+            <ul class="guide-list">
+              <li>🏆 Best splurge: é by José Andrés</li>
+              <li>🌮 Best value: Tacos El Gordo</li>
+              <li>🍜 Best neighbourhood find: Kabuto Ramen</li>
+            </ul>
+            <a href="#" class="btn btn-neon btn-sm">Read Full Article</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-img">
+            <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=600&q=80" alt="Street food"/>
+            <span class="blog-tag">Street Food</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">May 8, 2026 · 5 min read</div>
+            <h3>Top Street Food Spots in Las Vegas</h3>
+            <p>Vegas street food is wildly underrated. Beyond the casino walls, there's a thriving taco, food truck, and night market scene that most tourists completely miss.</p>
+            <p class="feat-desc">From Fremont food trucks to Chinatown's late-night noodle shops, here's where to eat when you're done with the Strip's inflated prices.</p>
+            <a href="#" class="btn btn-outline btn-sm">Read Article</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-img">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80" alt="Luxury dining"/>
+            <span class="blog-tag">Dining Guide</span>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">Apr 25, 2026 · 6 min read</div>
+            <h3>Budget vs. Luxury Dining in Vegas: A Real Comparison</h3>
+            <p>Is a $300 dinner actually better than a $15 one in Las Vegas? We compared both extremes head-to-head on taste, experience, and value.</p>
+            <p class="feat-desc">Spoiler: the $15 meal won on taste. The $300 meal won on everything else. Here's what that means for your trip.</p>
+            <a href="#" class="btn btn-outline btn-sm">Read Article</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TOPICS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Browse by Topic</span>
+        <h2>What Are You Into?</h2>
+      </div>
+      <div class="tips-grid">
+        <div class="tip-card"><span class="tip-icon">🍽</span><h4>Fine Dining</h4><p>Reviews, tasting menus, and where to splurge without regret.</p></div>
+        <div class="tip-card"><span class="tip-icon">🌮</span><h4>Street Food</h4><p>Cheap, bold, and authentic. The best bites under $15.</p></div>
+        <div class="tip-card"><span class="tip-icon">☕</span><h4>Brunch & Coffee</h4><p>Vegas brunches worth skipping the casino buffet for.</p></div>
+        <div class="tip-card"><span class="tip-icon">🌙</span><h4>Late Night</h4><p>Where to eat at 2am after a long night on the Strip.</p></div>
+        <div class="tip-card"><span class="tip-icon">🏙</span><h4>Off-Strip</h4><p>Chinatown, Fremont, Summerlin — local eats off the beaten path.</p></div>
+        <div class="tip-card"><span class="tip-icon">💰</span><h4>Budget Tips</h4><p>How to eat incredibly well in Vegas without going broke.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container cta-inner">
+      <h2>Got a Vegas Food<br/>Story to Share?</h2>
+      <p>We love hearing from fellow eaters. Send us your tips, hidden gems, or hot takes.</p>
+      <a href="contact.html" class="btn btn-neon">Get in Touch</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">Vegas<span>Now</span> Eats</a>
+      <p>Where to Eat in Vegas Today</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="restaurants.html">Restaurants</a>
+      <a href="guides.html">Guides</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>© 2026 VegasNow Eats. All rights reserved. Eat well.</p></div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
